@@ -1,0 +1,806 @@
+ERROR - 2024-02-26 09:40:03 --> mysqli_sql_exception: Table 'db_managebarang.ci_sessions' doesn't exist in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Session\Handlers\DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('auhap9uefrqs2en...')
+#6 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Session\Session.php(918): session_start()
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Session\Session.php(240): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\Services.php(665): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#10 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\app-barang\app\Controllers\BaseController.php(51): session()
+#15 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(867): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#16 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#17 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#19 {main}
+CRITICAL - 2024-02-26 09:40:03 --> Table 'db_managebarang.ci_sessions' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = \'auhap9uefrqs2enn761ee65aen0g9mp0\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = \'auhap9uefrqs2enn761ee65aen0g9mp0\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = \'auhap9uefrqs2enn761ee65aen0g9mp0\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('auhap9uefrqs2enn761ee65aen0g9mp0')
+ 7 SYSTEMPATH\Session\Session.php(918): session_start()
+ 8 SYSTEMPATH\Session\Session.php(240): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(665): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+11 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 APPPATH\Controllers\BaseController.php(51): session()
+16 SYSTEMPATH\CodeIgniter.php(867): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+17 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+18 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 09:40:19 --> mysqli_sql_exception: Table 'db_managebarang.ci_sessions' doesn't exist in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `data`\nF...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`\nF...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`\nF...')
+#3 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `data`\nF...', Array, false)
+#4 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Session\Handlers\DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+#5 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('0muiv2n8mh1h7e1...')
+#6 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Session\Session.php(918): session_start()
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Session\Session.php(240): CodeIgniter\Session\Session->startSession()
+#8 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\Services.php(665): CodeIgniter\Session\Session->start()
+#9 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+#10 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#11 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', NULL)
+#12 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+#13 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', Array)
+#14 C:\xampp\htdocs\app-barang\app\Controllers\BaseController.php(51): session()
+#15 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(867): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#16 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#17 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#18 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#19 {main}
+CRITICAL - 2024-02-26 09:40:19 --> Table 'db_managebarang.ci_sessions' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = \'0muiv2n8mh1h7e1op1u5p5jkr3kegakm\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = \'0muiv2n8mh1h7e1op1u5p5jkr3kegakm\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = \'0muiv2n8mh1h7e1op1u5p5jkr3kegakm\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `data`
+FROM `ci_sessions`
+WHERE `id` = :id:', [...], false)
+ 5 SYSTEMPATH\Session\Handlers\DatabaseHandler.php(126): CodeIgniter\Database\BaseBuilder->get()
+ 6 [internal function]: CodeIgniter\Session\Handlers\DatabaseHandler->read('0muiv2n8mh1h7e1op1u5p5jkr3kegakm')
+ 7 SYSTEMPATH\Session\Session.php(918): session_start()
+ 8 SYSTEMPATH\Session\Session.php(240): CodeIgniter\Session\Session->startSession()
+ 9 SYSTEMPATH\Config\Services.php(665): CodeIgniter\Session\Session->start()
+10 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+11 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+12 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+13 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+14 SYSTEMPATH\Common.php(934): CodeIgniter\Config\BaseService::__callStatic('session', [])
+15 APPPATH\Controllers\BaseController.php(51): session()
+16 SYSTEMPATH\CodeIgniter.php(867): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+17 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+18 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 10:26:03 --> mysqli_sql_exception: Table 'db_managebarang.users' doesn't exist in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\app-barang\app\Controllers\Auth.php(100): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\Auth->login()
+#8 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-26 10:26:03 --> Table 'db_managebarang.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'21232f297a57a5a743894a0e4a801fc3\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'21232f297a57a5a743894a0e4a801fc3\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `username` = \'admin\'
+AND `password` = \'21232f297a57a5a743894a0e4a801fc3\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(249): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Auth.php(100): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->login()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 10:26:40 --> Undefined array key "id_users"
+in APPPATH\Controllers\Auth.php on line 105.
+ 1 APPPATH\Controllers\Auth.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_users"', 'APPPATH\\Controllers\\Auth.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 10:27:05 --> mysqli_sql_exception: Table 'db_managebarang.barang' doesn't exist in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM b...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM b...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM b...')
+#3 C:\xampp\htdocs\app-barang\app\Models\BarangModel.php(39): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 C:\xampp\htdocs\app-barang\app\Controllers\BarangController.php(19): App\Models\BarangModel->selectall()
+#5 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BarangController->index()
+#6 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-26 10:27:05 --> Table 'db_managebarang.barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM barang', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM barang')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM barang')
+ 4 APPPATH\Models\BarangModel.php(39): CodeIgniter\Database\BaseConnection->query('SELECT * FROM barang')
+ 5 APPPATH\Controllers\BarangController.php(19): App\Models\BarangModel->selectall()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 10:32:08 --> mysqli_sql_exception: Table 'db_managebarang.kategory' doesn't exist in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM k...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM k...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM k...')
+#3 C:\xampp\htdocs\app-barang\app\Models\KategoryModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM k...')
+#4 C:\xampp\htdocs\app-barang\app\Controllers\BarangController.php(21): App\Models\KategoryModel->indexData()
+#5 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BarangController->index()
+#6 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-26 10:32:08 --> Table 'db_managebarang.kategory' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM kategory ', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM kategory ')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM kategory ')
+ 4 APPPATH\Models\KategoryModel.php(40): CodeIgniter\Database\BaseConnection->query('SELECT * FROM kategory ')
+ 5 APPPATH\Controllers\BarangController.php(21): App\Models\KategoryModel->indexData()
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 10:35:16 --> Undefined variable $kategory
+in APPPATH\Views\Barang\index.php on line 42.
+ 1 APPPATH\Views\Barang\index.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategory', 'APPPATH\\Views\\Barang\\index.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Barang/index', [], true)
+ 5 APPPATH\Controllers\BarangController.php(26): view('Barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 10:39:16 --> Undefined property: App\Controllers\BarangController::$kategory
+in APPPATH\Controllers\BarangController.php on line 42.
+ 1 APPPATH\Controllers\BarangController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\BarangController::$kategory', 'APPPATH\\Controllers\\BarangController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->createview()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 10:57:11 --> Invalid file: JenisBarang/created.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('JenisBarang/created.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('JenisBarang/created', [], true)
+ 3 APPPATH\Controllers\JenisBarangController.php(47): view('JenisBarang/created', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->createview()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 11:05:14 --> mysqli_sql_exception: Table 'db_managebarang.barang' doesn't exist in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Validation\Validation.php(308): CodeIgniter\Validation\Rules->is_unique('Makanan', 'nama_barang', Array, NULL)
+#6 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('name', 'name', 'Makanan', Array, Array)
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\app-barang\app\Controllers\JenisBarangController.php(78): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\JenisBarangController->createsave()
+#10 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+#11 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-26 11:05:14 --> Table 'db_managebarang.barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `barang`
+WHERE `nama_barang` = \'Makanan\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `barang`
+WHERE `nama_barang` = \'Makanan\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `barang`
+WHERE `nama_barang` = \'Makanan\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `barang`
+WHERE `nama_barang` = :nama_barang:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(308): CodeIgniter\Validation\Rules->is_unique('Makanan', 'nama_barang', [...], null)
+ 7 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('name', 'name', 'Makanan', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\JenisBarangController.php(78): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->createsave()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:07:19 --> Undefined property: App\Controllers\JenisBarangController::$jenisbarang
+in APPPATH\Controllers\JenisBarangController.php on line 63.
+ 1 APPPATH\Controllers\JenisBarangController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\JenisBarangController::$jenisbarang', 'APPPATH\\Controllers\\JenisBarangController.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:07:34 --> Undefined array key "nama_kategory"
+in APPPATH\Views\Barang\index.php on line 43.
+ 1 APPPATH\Views\Barang\index.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kategory"', 'APPPATH\\Views\\Barang\\index.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Barang/index', [], true)
+ 5 APPPATH\Controllers\BarangController.php(26): view('Barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:08:15 --> Undefined array key "nama_jenis_kategory"
+in APPPATH\Views\Barang\index.php on line 43.
+ 1 APPPATH\Views\Barang\index.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_jenis_kategory"', 'APPPATH\\Views\\Barang\\index.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Barang/index', [], true)
+ 5 APPPATH\Controllers\BarangController.php(26): view('Barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:09:41 --> Undefined property: App\Controllers\JenisBarangController::$jenisbarang
+in APPPATH\Controllers\JenisBarangController.php on line 63.
+ 1 APPPATH\Controllers\JenisBarangController.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\JenisBarangController::$jenisbarang', 'APPPATH\\Controllers\\JenisBarangController.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:10:25 --> Call to undefined method App\Models\KategoryModel::selectwhere
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\JenisBarangController.php(63): CodeIgniter\Model->__call('selectwhere', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:10:43 --> Undefined variable $produk
+in APPPATH\Views\Jenis_Barang\edit.php on line 26.
+ 1 APPPATH\Views\Jenis_Barang\edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $produk', 'APPPATH\\Views\\Jenis_Barang\\edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Jenis_Barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Jenis_Barang/edit', [], true)
+ 5 APPPATH\Controllers\JenisBarangController.php(67): view('Jenis_Barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:11:53 --> Undefined variable $jenis_barang
+in APPPATH\Views\Jenis_Barang\edit.php on line 26.
+ 1 APPPATH\Views\Jenis_Barang\edit.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenis_barang', 'APPPATH\\Views\\Jenis_Barang\\edit.php', 26)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Jenis_Barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Jenis_Barang/edit', [], true)
+ 5 APPPATH\Controllers\JenisBarangController.php(67): view('Jenis_Barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:12:02 --> Cannot access offset of type string on string
+in APPPATH\Views\Jenis_Barang\edit.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Jenis_Barang/edit', [], true)
+ 4 APPPATH\Controllers\JenisBarangController.php(67): view('Jenis_Barang/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:12:21 --> Cannot access offset of type string on string
+in APPPATH\Views\Jenis_Barang\edit.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Jenis_Barang/edit', [], true)
+ 4 APPPATH\Controllers\JenisBarangController.php(67): view('Jenis_Barang/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:13:09 --> Undefined array key "report"
+in APPPATH\Controllers\JenisBarangController.php on line 64.
+ 1 APPPATH\Controllers\JenisBarangController.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "report"', 'APPPATH\\Controllers\\JenisBarangController.php', 64)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:13:23 --> Cannot access offset of type string on string
+in APPPATH\Views\Jenis_Barang\edit.php on line 31.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Jenis_Barang/edit', [], true)
+ 4 APPPATH\Controllers\JenisBarangController.php(67): view('Jenis_Barang/edit', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:14:56 --> Call to undefined method App\Models\KategoryModel::selectwhereid
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\JenisBarangController.php(63): CodeIgniter\Model->__call('selectwhereid', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->editview('1')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:23:34 --> Call to undefined function App\Models\delete()
+in APPPATH\Models\KategoryModel.php on line 94.
+ 1 APPPATH\Controllers\JenisBarangController.php(148): App\Models\KategoryModel->deleteData('1')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\JenisBarangController->delete()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JenisBarangController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 11:28:47 --> mysqli_sql_exception: Table 'db_managebarang.barang' doesn't exist in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Validation\Validation.php(308): CodeIgniter\Validation\Rules->is_unique('Es teh', 'nama_barang', Array, NULL)
+#6 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('name', 'name', 'Es teh', Array, Array)
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\app-barang\app\Controllers\BarangController.php(80): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BarangController->createsave()
+#10 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#11 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-02-26 11:28:47 --> Table 'db_managebarang.barang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `barang`
+WHERE `nama_barang` = \'Es teh\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `barang`
+WHERE `nama_barang` = \'Es teh\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `barang`
+WHERE `nama_barang` = \'Es teh\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `barang`
+WHERE `nama_barang` = :nama_barang:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(308): CodeIgniter\Validation\Rules->is_unique('Es teh', 'nama_barang', [...], null)
+ 7 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('name', 'name', 'Es teh', [...], [...])
+ 8 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 9 APPPATH\Controllers\BarangController.php(80): CodeIgniter\Controller->validate([...])
+10 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->createsave()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 11:29:29 --> mysqli_sql_exception: Unknown column 'stok_barang' in 'field list' in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO tb_...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO tb_...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tb_...')
+#3 C:\xampp\htdocs\app-barang\app\Models\BarangModel.php(55): CodeIgniter\Database\BaseConnection->query('INSERT INTO tb_...')
+#4 C:\xampp\htdocs\app-barang\app\Controllers\BarangController.php(130): App\Models\BarangModel->insertData(Array)
+#5 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BarangController->createsave()
+#6 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-26 11:29:29 --> Unknown column 'stok_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO tb_barang (id_jenis_barang,nama_barang,harga,stok_barang) VALUES 
+		(\'2\',\'Es teh\',\'23000\',\'4\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO tb_barang (id_jenis_barang,nama_barang,harga,stok_barang) VALUES 
+		(\'2\',\'Es teh\',\'23000\',\'4\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO tb_barang (id_jenis_barang,nama_barang,harga,stok_barang) VALUES 
+		(\'2\',\'Es teh\',\'23000\',\'4\')')
+ 4 APPPATH\Models\BarangModel.php(55): CodeIgniter\Database\BaseConnection->query('INSERT INTO tb_barang (id_jenis_barang,nama_barang,harga,stok_barang) VALUES 
+		(\'2\',\'Es teh\',\'23000\',\'4\')')
+ 5 APPPATH\Controllers\BarangController.php(130): App\Models\BarangModel->insertData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->createsave()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:30:05 --> Undefined array key "kode_barang"
+in APPPATH\Views\Barang\index.php on line 81.
+ 1 APPPATH\Views\Barang\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_barang"', 'APPPATH\\Views\\Barang\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Barang/index', [], true)
+ 5 APPPATH\Controllers\BarangController.php(26): view('Barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:30:35 --> Undefined array key "kode_barang"
+in APPPATH\Views\Barang\index.php on line 81.
+ 1 APPPATH\Views\Barang\index.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_barang"', 'APPPATH\\Views\\Barang\\index.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Barang/index', [], true)
+ 5 APPPATH\Controllers\BarangController.php(26): view('Barang/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 11:30:47 --> mysqli_sql_exception: Unknown column 'kode_barang' in 'where clause' in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM t...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM t...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM t...')
+#3 C:\xampp\htdocs\app-barang\app\Models\BarangModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT * FROM t...', '1')
+#4 C:\xampp\htdocs\app-barang\app\Controllers\BarangController.php(65): App\Models\BarangModel->selectwhere('1')
+#5 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BarangController->editview('1')
+#6 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-26 11:30:47 --> Unknown column 'kode_barang' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM tb_barang where kode_barang = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM tb_barang where kode_barang = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM tb_barang where kode_barang = \'1\'')
+ 4 APPPATH\Models\BarangModel.php(46): CodeIgniter\Database\BaseConnection->query('SELECT * FROM tb_barang where kode_barang = ?', '1')
+ 5 APPPATH\Controllers\BarangController.php(65): App\Models\BarangModel->selectwhere('1')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:31:02 --> Undefined array key "nama_kategory"
+in APPPATH\Views\Barang\edit.php on line 34.
+ 1 APPPATH\Views\Barang\edit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_kategory"', 'APPPATH\\Views\\Barang\\edit.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Barang/edit', [], true)
+ 5 APPPATH\Controllers\BarangController.php(69): view('Barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:32:20 --> Undefined array key "nama_jenis_barang"
+in APPPATH\Views\Barang\edit.php on line 34.
+ 1 APPPATH\Views\Barang\edit.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_jenis_barang"', 'APPPATH\\Views\\Barang\\edit.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Barang/edit', [], true)
+ 5 APPPATH\Controllers\BarangController.php(69): view('Barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:32:41 --> Undefined array key "harga_beli"
+in APPPATH\Views\Barang\edit.php on line 51.
+ 1 APPPATH\Views\Barang\edit.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "harga_beli"', 'APPPATH\\Views\\Barang\\edit.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Barang/edit', [], true)
+ 5 APPPATH\Controllers\BarangController.php(69): view('Barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:33:05 --> Undefined array key "kode_barang"
+in APPPATH\Views\Barang\edit.php on line 69.
+ 1 APPPATH\Views\Barang\edit.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_barang"', 'APPPATH\\Views\\Barang\\edit.php', 69)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Barang\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Barang/edit', [], true)
+ 5 APPPATH\Controllers\BarangController.php(69): view('Barang/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->editview('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-26 11:39:33 --> mysqli_sql_exception: Unknown column 'kategory_barang' in 'field list' in C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE tb_baran...', 0)
+#1 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tb_baran...')
+#2 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tb_baran...')
+#3 C:\xampp\htdocs\app-barang\app\Models\BarangModel.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE tb_baran...')
+#4 C:\xampp\htdocs\app-barang\app\Controllers\BarangController.php(191): App\Models\BarangModel->updateData('1', Array)
+#5 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(904): App\Controllers\BarangController->editsave()
+#6 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+#7 C:\xampp\htdocs\app-barang\vendor\codeigniter4\framework\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\app-barang\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-02-26 11:39:33 --> Unknown column 'kategory_barang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE tb_barang SET kategory_barang = \'2\'
+		, nama_barang= \'Es teh\', harga= \'2300\',stok=\'4\' WHERE id_barang = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tb_barang SET kategory_barang = \'2\'
+		, nama_barang= \'Es teh\', harga= \'2300\',stok=\'4\' WHERE id_barang = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tb_barang SET kategory_barang = \'2\'
+		, nama_barang= \'Es teh\', harga= \'2300\',stok=\'4\' WHERE id_barang = \'1\'')
+ 4 APPPATH\Models\BarangModel.php(75): CodeIgniter\Database\BaseConnection->query('UPDATE tb_barang SET kategory_barang = \'2\'
+		, nama_barang= \'Es teh\', harga= \'2300\',stok=\'4\' WHERE id_barang = \'1\'')
+ 5 APPPATH\Controllers\BarangController.php(191): App\Models\BarangModel->updateData('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\BarangController->editsave()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BarangController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:49:23 --> Call to undefined method App\Models\UserModel::selectall
+in SYSTEMPATH\Model.php on line 773.
+ 1 APPPATH\Controllers\UserController.php(19): CodeIgniter\Model->__call('selectall', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\UserController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 11:49:51 --> Undefined variable $jenis_barang
+in APPPATH\Views\User\index.php on line 42.
+ 1 APPPATH\Views\User\index.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenis_barang', 'APPPATH\\Views\\User\\index.php', 42)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\User\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('User/index', [], true)
+ 5 APPPATH\Controllers\UserController.php(24): view('User/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\UserController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:33:02 --> Invalid file: Dashboard/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Dashboard/index.php')
+ 2 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('Dashboard/index', [], true)
+ 3 APPPATH\Controllers\DashboardController.php(28): view('Dashboard/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:33:28 --> Undefined variable $cdata
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cdata', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:33:44 --> Undefined variable $data
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:34:22 --> Array to string conversion
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:34:41 --> Array to string conversion
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:35:04 --> Array to string conversion
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:35:24 --> Array to string conversion
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:35:28 --> Array to string conversion
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:40:45 --> Array to string conversion
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:54:25 --> Undefined array key "count"
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:55:46 --> Undefined array key "count"
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:55:58 --> Undefined array key "count"
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:57:07 --> Attempt to read property "count" on array
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "count" on array', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:58:10 --> Array to string conversion
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:59:23 --> Undefined array key "count"
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 12:59:26 --> Undefined array key "count"
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 14:03:29 --> Undefined array key "count"
+in APPPATH\Views\dashboard.php on line 14.
+ 1 APPPATH\Views\dashboard.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "count"', 'APPPATH\\Views\\dashboard.php', 14)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 14:04:16 --> Undefined variable $jenisbarang
+in APPPATH\Views\dashboard.php on line 32.
+ 1 APPPATH\Views\dashboard.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisbarang', 'APPPATH\\Views\\dashboard.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 14:04:25 --> Undefined variable $jenisbarang
+in APPPATH\Views\dashboard.php on line 32.
+ 1 APPPATH\Views\dashboard.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisbarang', 'APPPATH\\Views\\dashboard.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-26 14:04:48 --> Undefined variable $jenisbarang
+in APPPATH\Views\dashboard.php on line 32.
+ 1 APPPATH\Views\dashboard.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jenisbarang', 'APPPATH\\Views\\dashboard.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1137): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(28): view('dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
